@@ -1,0 +1,59 @@
+========================================
+E-COMMERCE SCRAPER - SETUP GUIDE (Hinglish)
+========================================
+
+Is folder mein ye files hain:
+- generic_ecommerce_scraper.py  --> asli scraper script
+- requirements.txt              --> zaroori packages ki list
+- setup_windows.bat             --> Windows walon ke liye (double-click karo)
+- setup_mac_linux.sh            --> Mac/Linux walon ke liye
+
+----------------------------------------
+STEP 1: Python install karo
+----------------------------------------
+Agar Python pehle se nahi hai to python.org se download karo.
+Windows install karte waqt "Add Python to PATH" tick zaroor karna.
+
+----------------------------------------
+STEP 2: Ye folder kahin extract/save karo
+----------------------------------------
+Jaise Desktop pe ek folder "ecommerce_scraper" rakh lo.
+
+----------------------------------------
+STEP 3: Setup chalao
+----------------------------------------
+WINDOWS: is folder ke andar "setup_windows.bat" pe double-click karo.
+         Ek kaali window khulegi, khud packages install ho jayenge.
+
+MAC/LINUX: Terminal kholo, is folder mein jao (cd command se), fir likho:
+           bash setup_mac_linux.sh
+
+Ye step ek hi baar karni hai. Isse do cheezein install hongi:
+1) Python libraries (playwright, requests)
+2) Ek chota internal Chrome browser (scraping ke liye)
+
+----------------------------------------
+STEP 4: Scraper chalao
+----------------------------------------
+Setup complete hone ke baad, usi terminal/cmd window mein ye likho
+(URL ki jagah client ki asli website daalo):
+
+Windows:
+    python generic_ecommerce_scraper.py "https://client-website.com"
+
+Mac/Linux:
+    python3 generic_ecommerce_scraper.py "https://client-website.com"
+
+----------------------------------------
+STEP 5: Result dekho
+----------------------------------------
+Kaam poora hone ke baad isi folder mein "output" naam ka naya folder
+banega, jisme ek .json file hogi - usi mein sara product data
+(naam, price, rating, stock, link, image, description) structured
+form mein saved hoga.
+
+----------------------------------------
+Agar koi error aaye
+----------------------------------------
+Jo bhi error message dikhe, uska screenshot ya text copy karke
+mujhe bhej dena - main us hisaab se batadunga kya karna hai.
